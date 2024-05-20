@@ -2,14 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre</title>
     <!--<link rel="stylesheet" href="index.css">-->
     <style>
 body{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #f1f1f1;
     overflow-x: hidden;
 }
@@ -50,6 +52,24 @@ nav a:hover{
     width: 100%;
     padding: 1rem;
     box-sizing: border-box; 
+    font-size: 18px;
+}
+footer{
+    padding: 13px;
+    width: 100%;
+    background-color: darkgrey;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    header{
+    width: 100%;
+    height: 80px;
+    background-color: darkgrey;
+}
+    nav a {
+    padding: 0.5rem;
+    font-size: 12px;
+    }
 }
 
     </style>
@@ -61,27 +81,36 @@ nav a:hover{
        <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="curriculo.html">Curriculo</a></li>
-        <li><a href="portifolio.html">Meu GitHub</a></li>
+        <li><a href="https://github.com/mrzgamer" target="_blank">Meu GitHub</a></li>
         <li><a href="referencias.html">Referencias</a></li>
        </ul>
     </nav>
     </header>
-
+       <!--Div usando id Inicio, nele esta sendo apresentado um pouco de minha historia de vida utilizadando as tags <h1> e <p>-->
      <div id="inicio">
         <h1>Sobre Murilo Moraz</h1>
-        <p>Eu me chamo Murilo nasci no dia 26 de maio de 1993 <br> 
-         No municipio de São Manoel interior de São Paulo, estou cursando Analise e desenvolvimento de sistemas no grupo Uninter na modalidade "EAD". <br>
-         Hoje venho lhes contar como tudo começou, sempre gostei de jogar jogos online tais como: <br>
-         Lineage2, Minecraft entre outros. Quando comecei a jogar um determinado servidor de minecraft, neste servidor havia vagas abertas para particidar da Staff "grupo de ajudantes do servidor" conforme foi passando o tempo eu comecei a adquirir experiencia no jogo com isto surgiu a curiosidade de como poderia abrir meu proprio servidor.<br>
-         Coloquei meu plano em pratica vendo tutoriais e pesquisas iniciei o projeto do SwordCraft. Porem não tinha muito conhecimento na area de desenvolvimento "Java para atender a necessidade do servidor", contratava serviços de desenvolvimento e a medida que os dias passavam os gastos com os desenvolvimentos para as aplicações do servidor estavam ficando ligeiramente sagadas em seus custos.<br>
+        <p>Eu tenho 30 anos completarei 31 dia 26/05/2024 nasci no municipio de São Manuel (SP) onde morei ate completar 2 anos de idade.<br> 
+          Mudei para lençois Paulista (SP) onde residi por mais 4 anos neste periodo estudei nas escolas de educação infantil Irma Carrit e após Leonina alves Coneglian<br> 
+          em 2001 nos mudamos para o municipio de Guarapuava (Pr) onde morei ate meus 26 anos.<br>
+         Equanto morava lá conheci minha atual esposa Lanay Tayna de Matos com quem tenho 2 filhas Maria Emanuelle de Matos Pintor e Livia Katherina de Matos Pintor, 
+         Estou  cursando Analise e desenvolvimento de sistemas no grupo Uninter na modalidade "EAD".
+         Sempre gostei de  jogos online tais como: Minecraft, CS-GO, Lineage2 entre outros. 
+         Em um dos servidores que havia jogado possuia vagas abertas para particidar da Staff "grupo de ajudantes do servidor" conforme foi passando o tempo eu comecei a adquirir experiencia no jogo com isto surgiu a curiosidade de como poderia abrir meu proprio servidor.<br>
+         Coloquei meu plano em pratica vendo tutoriais e pesquisas iniciei o projeto do SwordCraft. Porem não tinha muito conhecimento na area de desenvolvimento "Java para atender a necessidade do servidor", contratava serviços de desenvolvimento e a medida que os dias passavam os gastos com os desenvolvimentos para as aplicações do servidor estavam ficando ligeiramente caros em seus custos.<br>
          Foi quando pensei por que não desenvolver meus proprios projetos, comecei vendo tutoriais no youtube, contratei algumas aulas  particulares, conforme o tempo foi passando pensando em aprimorar conhecimentos e construir uma carreira profissional na area da tecnologia da informação iniciei no curso de Analise e desenvolvimentos de sistemas.
-         No inicio tinha apenas o conhecimento em java entre  iniciante e intermediario, com o avanço dos dias e novas oportunidades e curiosidades realizei aguns projetos em python e recentemente desenvolvi o interesse no desenvolvimento web.<br>
+         No inicio tinha apenas o conhecimento em java entre  iniciante e intermediario, com o avanço dos dias e novas oportunidades e curiosidades realizei aguns projetos em python e recentemente desenvolvi o interesse no desenvolvimento web. 
          Atualmente ajudei minha esposa a desenvolver um catalogo online com o opção de carrinho de compras para os cliente poder realizar as encomendas dos produtos na area portifolio deixarei o link para visitar o catalogo. Com o catalogo online e sua divulgação houve uma procura por um catalogo semelhantes apara uma loja de venda de roupas deixarei o link tambem para conhecimento.
-         <br>Em resumo podemos dizer que meu interesse por jogos e afins acabei desenvolvendo o interesse na area da tecnologia da informação.
-         </p>
-     </div>
+         <br>Em resumo podemos dizer que meu interesse por jogos e afins acabei desenvolvendo o interesse na area da tecnologia da informação. Atualmente estou desenvolvendo plugins para jogos na liguagem Java, tenho 2 catalodos de vendas online desenvolvidos em Html, Css e Php o link para eles estão disponiveis em referencias.
+        </p>   
+    </div>
 
-
+    <!--Quebra de linha para ajustar o footer ao fim da pagina-->
+    <br><br><br><br><br><br><br>
+    <!--Footer parte inferior da pagina tambem em cinza contendo Nome do desenvolvedor e RU-->
+    <footer>
+       <h3>© Todos os direitos reservados</h3>
+       <p>Site desenvolvido por Murilo Moraz RU: 3865458</p>
+    </footer>
 
 </body>
 </html>
