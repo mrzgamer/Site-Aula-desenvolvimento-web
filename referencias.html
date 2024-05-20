@@ -9,8 +9,11 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #f1f1f1;
+    overflow-x: hidden;
 }
 
 header{
@@ -64,6 +67,23 @@ nav a:hover{
 .lista ul{
     list-style: none;
 }
+footer{
+    padding: 18px;
+    width: 100%;
+    background-color: darkgrey;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    header{
+    width: 100%;
+    height: 80px;
+    background-color: darkgrey;
+}
+    nav a {
+    padding: 0.5rem;
+    font-size: 12px;
+    }
+}
 
     </style>
 </head>
@@ -75,14 +95,14 @@ nav a:hover{
         <li><a href="index.html">Inicio</a></li>
         <li><a href="sobremin.html">Apresentação</a></li>
         <li><a href="curriculo.html">Curriculo</a></li>
-        <li><a href="portifolio.html">Meu GitHub</a></li>
+        <li><a href="https://github.com/mrzgamer" target="_blank">Meu GitHub</a></li>
         
        </ul>
     </nav>
     </header>
 
         
-      
+      <!--Informações sobre as Referencias contendo nome e informaçoes especificas.-->
      <div id="inicio">
         <h1>Sejam Bem Vindos !!! </h1>
         <h2>Aqui venho apresentar as fontes utilizadas como inspiração</h2>
@@ -91,13 +111,23 @@ nav a:hover{
         e tambem utilizados para o desenvolvimento deste trabalho.</p>
     
     </div>
+     <!--Lista não ordenada contendo os links de navegação-->
     <div class="lista">
        <ul>
         <li><br><a href="https://www.youtube.com/watch?v=n_Etdr7Dbjs"  target="_blank">Html + css na pratica 🔥 Faça seu primeiro site.</a></li><br>
         <li><a href="https://www.youtube.com/watch?v=qPYCnebQQ6U&list=PL4iwH9RF8xHmjxVNJcyNSkVDYNUo6r2BM" target="_blank">Criando um site do zero com: HTML, CSS e JS - #01 playlist com 13 topios.</a></li><br>
         <li><a href="https://www.youtube.com/watch?v=-FQP7hD-J6A" target="_blank">Todas as tags que voce precisa saber.</a></li><br>
         <li><a href="https://www.youtube.com/watch?v=1LJGQb_pn6k target" target="_blank"> Curso HTML para iniciantes. </a></li><br>
+        <li><a href="https://morangocomchantilly.shop" target="_blank"> Catalogo Online de sexshop. </a></li><br>
        </ul>
     </div>
+
+    <!--Quebra de linha para ajustar o footer ao fim da pagina-->
+    <br><br><br><br><br><br><br><br><br>
+    <!--Footer parte inferior da pagina tambem em cinza contendo Nome do desenvolvedor e RU-->
+    <footer>
+       <h3>© Todos os direitos reservados</h3>
+       <p>Site desenvolvido por Murilo Moraz RU: 3865458</p>
+    </footer>
 </body>
 </html>
