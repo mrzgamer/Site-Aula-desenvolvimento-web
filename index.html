@@ -2,15 +2,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--<link rel="stylesheet" href="index.css">-->
+    <title>Inicio</title>
     <style>
+      
 body{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
     background-color: #f1f1f1;
+    overflow-x: hidden;
 }
 
 header{
@@ -56,30 +58,59 @@ nav a:hover{
     border: solid 2px gainsboro;
     border-radius: 50%;
 }
+footer{
+    padding: 18px;
+    width: 100%;
+    background-color: darkgrey;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    header{
+    width: 100%;
+    height: 80px;
+    background-color: darkgrey;
+}
+    nav a {
+    padding: 0.5rem;
+    font-size: 12px;
+    }
+}
 
     </style>
 </head>
+<!--Body Corpo da pagina  onde sera desenvolvido e apresentado todo o site.-->
 <body>
-    
+    <!--Header responsavel por criar a parte superior definido em cinza onde estarão os links de navegação-->
     <header>
         <nav>
        <ul>
+         <!--Lista não ordenada contendo os links de navegação-->
         <li><a href="sobremin.html">Apresentação</a></li>
         <li><a href="curriculo.html">Curriculo</a></li>
-        <li><a href="portifolio.html">Meu GitHub</a></li>
+        <li><a href="https://github.com/mrzgamer" target="_blank">Meu GitHub</a></li>
         <li><a href="referencias.html">Referencias</a></li>
        </ul>
     </nav>
     </header>
-
+ 
+        <!--Caminho indicando onde fica as imagens do site.-->
         <img src="img/minhafoto.jpg" class="image">
       
+        <!--Div responsavel por criar o container e permitindo que o CSS aplique a estilização.-->
      <div id="inicio">
         <h1>Sejam Bem Vindos !!! </h1>
         <h2>Murilo Moraz Pintor RU:3865458</h2>
         <p>Eu me chamo Murilo e vim lhes  apresentar um pouco do meu aprendizado</p>
      </div>
 
+
+     <!--Quebra de linha para ajustar o footer ao fim da pagina-->
+      <br><br><br><br><br><br><br>
+      <!--Footer parte inferior da pagina tambem em cinza contendo Nome do desenvolvedor e RU-->
+     <footer>
+        <h3>© Todos os direitos reservados</h3>
+        <p>Site desenvolvido por Murilo Moraz RU: 3865458</p>
+     </footer>
 
 </body>
 </html>
